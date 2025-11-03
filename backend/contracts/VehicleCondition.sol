@@ -7,6 +7,7 @@ import {ZamaEthereumConfig} from "@fhevm/solidity/config/ZamaConfig.sol";
 /// @title VehicleCondition - Privacy-preserving vehicle condition scoring using FHEVM
 /// @notice Accepts encrypted vehicle parameters, computes an encrypted score and level, and authorizes the caller to decrypt.
 /// @dev All computations happen on encrypted types. Division uses clear divisors per FHEVM rules.
+/// @author AndyJimae
 contract VehicleCondition is ZamaEthereumConfig {
     mapping(address => euint32) private _scoreByUser;
     mapping(address => euint8) private _levelByUser; // 0: Excellent, 1: Good, 2: Fair, 3: Poor
