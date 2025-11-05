@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata = {
   title: "Vehicle Condition Assessment",
   description: "Secure vehicle condition evaluation using FHEVM",
+  keywords: "FHEVM, vehicle condition, privacy-preserving",
 };
 
 export default function RootLayout({

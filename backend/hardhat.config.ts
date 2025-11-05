@@ -11,6 +11,7 @@ import "solidity-coverage";
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
 // Support environment variables for PowerShell: $env:MNEMONIC and $env:SEPOLIA_RPC_URL
+// Default mnemonic is for local development only
 const MNEMONIC: string = process.env.MNEMONIC || vars.get(
   "MNEMONIC",
   "test test test test test test test test test test test junk"
