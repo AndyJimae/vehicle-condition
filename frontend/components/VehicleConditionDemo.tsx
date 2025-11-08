@@ -58,7 +58,7 @@ export const VehicleConditionDemo = () => {
             </svg>
           </div>
           <h2 className="text-2xl font-bold text-gray-800 mb-3">Connect Your Wallet</h2>
-          <p className="text-gray-600 mb-8">Please connect your MetaMask wallet to access the vehicle condition assessment system</p>
+          <p className="text-gray-600 mb-8">Please connect your MetaMask wallet to access the vehicle condition assessment system. Your data will remain encrypted and private.</p>
           <button
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isConnected}
