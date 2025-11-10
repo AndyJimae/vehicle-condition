@@ -16,6 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
   color: #1a1a1a;
+  line-height: 1.6;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
