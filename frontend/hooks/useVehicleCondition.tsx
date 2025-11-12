@@ -27,6 +27,8 @@ export type ClearLevelType = {
   clear: bigint;
 };
 
+// Vehicle condition hook for managing encrypted vehicle data
+
 type VehicleConditionInfoType = {
   abi: typeof VehicleConditionABI.abi;
   address?: `0x${string}`;
