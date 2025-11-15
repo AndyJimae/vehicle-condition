@@ -28,13 +28,13 @@ contract VehicleCondition is ZamaEthereumConfig {
         euint32 accidents = FHE.fromExternal(cipherAccidents, inputProof);
         euint32 severity = FHE.fromExternal(cipherSeverity, inputProof);
 
-        // Base score
+        // Base score starts at 100
         euint32 score = FHE.asEuint32(100);
 
-        // Penalties:
-        // - mileage / 1000
-        // - accidents * 10
-        // - severity * 15
+        // Penalties calculation:
+        // - mileage penalty: mileage / 2000
+        // - accidents penalty: accidents * 5
+        // - severity penalty: severity * 10
         // Apply penalties and clamp after each subtraction to prevent underflow
         euint32 mileagePenalty = FHE.div(mileage, 2000);
         score = FHE.sub(score, mileagePenalty);
